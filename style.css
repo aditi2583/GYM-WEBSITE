@@ -1,0 +1,196 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url('gym.png') no-repeat center center/cover;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Navbar Hover Effect */
+.navbar:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+/* Logo Hover Zoom Effect */
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Link Hover Effect */
+.nav-links a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Call to Action Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #ffaa00;
+    transform: scale(1.05);
+}
+
+/* Button Click Effect */
+.btn:active {
+    transform: scale(0.95);
+    background-color: #ff9900;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hero Section Hover Effect */
+.hero:hover {
+    transform: scale(1.01);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Section */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Form Hover Effect */
+.container:hover {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Form Input Styling */
+.form-group {
+    margin: 10px 0;
+}
+
+/* Input Field Focus Effect */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Input Field Focus Effect */
+.form-group input:focus {
+    outline: none;
+    border: 2px solid #ffcc00;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Submit Button */
+.container .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+
